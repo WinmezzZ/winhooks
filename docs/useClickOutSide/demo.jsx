@@ -10,7 +10,7 @@ export default () => {
   });
 
   return (
-    <div>
+    <div className="demo-wrapper">
       <Button type="primary" ref={ref}>
         Click outside to console log
       </Button>

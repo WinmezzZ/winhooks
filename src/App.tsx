@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './App.less';
 import RenderRouter from './routes';
 
@@ -9,13 +9,13 @@ function App() {
       <header className="app-header">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/guide">Guide</Link>
+            <NavLink to="/guide">Guide</NavLink>
           </li>
           <li>
-            <Link to="/api">Api</Link>
+            <NavLink to="/api">Api</NavLink>
           </li>
         </ul>
       </header>

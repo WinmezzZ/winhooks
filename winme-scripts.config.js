@@ -1,10 +1,15 @@
 const { defineConfig } = require('@winme/webpack-scripts');
 const path = require('path');
-const remarkGfm = require('remark-gfm');
 
 module.exports = defineConfig({
-  htmlTemplatePath: 'index.html',
+  modifyVars: {
+    '@primary-color': '#13c2c2',
+  },
   webpack: async config => {
+    const remarkGfm = await import('remark-gfm');
+    const slug = await import('rehype-slug');
+    const headings = await import('rehype-autolink-headings');
+
     config.module.rules.push({
       test: /\.mdx?$/,
       use: [
@@ -13,6 +18,7 @@ module.exports = defineConfig({
           /** @type {import('@mdx-js/loader').Options} */
           options: {
             remarkPlugins: [remarkGfm],
+            rehypePlugins: [slug, headings],
           },
         },
       ],
