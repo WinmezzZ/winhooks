@@ -1989,10 +1989,10 @@
     sockjs-client "1.5.2"
     url "0.11.0"
 
-"@winme/webpack-scripts@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@winme/webpack-scripts/-/webpack-scripts-0.0.10.tgz#8a9d1e79462c06ea5ae85960bd8eae4a2f9a0b08"
-  integrity sha512-A/uAESB/XGXH6dOJEfLGysawBKgp7e/Q+YcirO2ZoOi4tjb3GAswW1cWsN+JYfK6AE/xkQaf/0xt1Guzd1PFHg==
+"@winme/webpack-scripts@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@winme/webpack-scripts/-/webpack-scripts-0.0.13.tgz#2fbd165af8a38a2567347152f3f5a241f521c8f5"
+  integrity sha512-cEQ5o9Ra2PVoNo0x5VysEh0YvNftflz7ow9FZSznBzl188JVOICLgL7cxZAfHH4DNx8eoVk2zaSw1kad9IYVnA==
   dependencies:
     "@babel/core" "^7.17.8"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
