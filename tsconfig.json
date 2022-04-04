@@ -19,7 +19,6 @@
     "paths": {
       "@winme/react-hooks": ["lib"],
       "@lib/*": ["lib/*"],
-      "@docs/*": ["docs/*"],
       "@/*": ["src/*"]
     }
   },

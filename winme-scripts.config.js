@@ -27,7 +27,6 @@ module.exports = defineConfig({
     config.resolve.alias = {
       '@winme/react-hooks': path.resolve(__dirname, 'lib/index'),
       '@lib': path.resolve(__dirname, 'lib'),
-      '@docs': path.resolve(__dirname, 'docs'),
       '@': path.resolve(__dirname, 'src'),
     };
 

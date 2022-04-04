@@ -7,11 +7,11 @@ const Api = lazy(() => import('@/pages/api'));
 const Guide = lazy(() => import('@/pages/guide'));
 
 const apiPageChildRoutes: RouteObject[] = (() => {
-  const modules = require.context('@docs', true, /index.mdx/);
+  const modules = require.context('@lib/', true, /index.mdx/);
 
   return modules.keys().map(m => {
     const name = m.replace('./', '').replace('/index.mdx', '');
-    const Com = lazy(() => import(`@docs/${name}/index.mdx`));
+    const Com = lazy(() => import(`@lib/${name}/index.mdx`));
 
     return {
       path: name,
