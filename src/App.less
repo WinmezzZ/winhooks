@@ -13,7 +13,9 @@ body,
   .app-header {
     height: 60px;
     border-bottom: 1px solid #ccc;
+    display: flex;
     ul {
+      flex: 1;
       margin: 0;
       padding: 0;
       height: 100%;
@@ -28,6 +30,12 @@ body,
       a.active {
         color: @primary-color;
       }
+    }
+    .right-icon {
+      padding: 0 30px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
     }
   }
   .app-section {
@@ -101,4 +109,5 @@ code {
 
 code {
   background-color: rgb(250, 250, 250);
+  padding: 4px !important;
 }

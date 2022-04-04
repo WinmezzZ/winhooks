@@ -28,7 +28,7 @@
   "scripts": {
     "dev": "winme start",
     "build:package": "rollup -c rollup.config.js",
-    "build:docs": "winme build"
+    "build:doc": "winme build"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.1",
