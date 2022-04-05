@@ -9,15 +9,11 @@ function Api() {
   const location = useLocation();
 
   useEffect(() => {
-    setMenus([]);
-    const modules = require.context('@lib', false, /\.ts$/);
+    if (menus.length) return;
 
-    modules
-      .keys()
-      .filter(m => !m.includes('index.ts'))
-      .forEach(m => {
-        setMenus(menus => [...menus, m.replace('./', '').replace('.ts', '')]);
-      });
+    import('@lib/index').then(modules => {
+      setMenus(Object.keys(modules));
+    });
   }, []);
 
   const handleClick = async (key: string) => {
@@ -25,7 +21,9 @@ function Api() {
   };
 
   const selectKey = useMemo(() => {
-    return location.pathname.replace('/api/', '');
+    const key = location.pathname.replace('/api/', '');
+
+    return key;
   }, [location]);
 
   return (
