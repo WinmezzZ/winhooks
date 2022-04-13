@@ -22,7 +22,7 @@ const CodeBlock: FC<CodeBlockProps> = props => {
 
   return (
     <div className="code-block-highlight">
-      <SyntaxHighlighter language={props.language} PreTag="div" style={dark}>
+      <SyntaxHighlighter language={props.language} style={dark}>
         {props.children}
       </SyntaxHighlighter>
       <Button size="mini" onClick={onCopy}>
