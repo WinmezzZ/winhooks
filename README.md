@@ -2,4 +2,4 @@
 
 Some useful react hooks collections.
 
-Docs: https://react-hooks.hyyar.com/
+Docs: https://winhooks.hyyar.com/
