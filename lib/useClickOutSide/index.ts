@@ -6,7 +6,7 @@ interface Callback {
   (event: Event): void;
 }
 
-export function useClickOutSide<T extends HTMLElement | null | undefined>(
+export default function useClickOutSide<T extends HTMLElement | null | undefined>(
   ref: Ref<T>,
   callback: Callback,
   excludes?: Ref<HTMLElement>[],
