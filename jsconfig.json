@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@winme/react-hooks": ["lib/index.ts"],
+      "@lib/*": ["lib/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "lib"]
+}

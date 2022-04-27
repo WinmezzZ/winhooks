@@ -1,0 +1,36 @@
+# useMutableState
+
+快速创建一个 `Portal` 组件，如果传入的是一个字符串，则会插入到 `body` 下生成指定字符串的 `id` 容器
+
+通常用于创建 `Toast`, `Modal` 等全局组件
+
+## Demo
+
+import Demo from './demo';
+
+<Demo />
+
+## Code
+
+import CodeBlock from '@/components/CodeBlock';
+import demo from '!!raw-loader!./demo';
+
+<CodeBlock>{demo}</CodeBlock>
+
+## 参数
+
+### Option.id
+
+- type: `string | HTMLElement`
+- default: `document.body`
+
+可以是一个不不存在(则会创建)或者已存在的 `id` 字符串，也可以是已存在的 `HTML` 元素
+
+如果不传，默认直接插入到 `body` 下
+
+### Option.attrs
+
+- type: `{[key: string]: string}`
+- default: `--`
+
+原生属性的键值对象，会添加在创建的 `id` 元素上

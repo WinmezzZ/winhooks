@@ -8,7 +8,7 @@ interface ReturnCallback<S> {
   (state: SetStateAction<S>, callback?: Callback<S>): void;
 }
 
-export function useCallbackState<T>(initState: T): [T, ReturnCallback<T>] {
+export default function useCallbackState<T>(initState: T): [T, ReturnCallback<T>] {
   const cbRef = useRef<Callback<T>>();
   const [state, setState] = useState(initState);
 

@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import dark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-light';
+import dark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark';
 import { Button } from 'ultra-design';
 import copyToClipboard from '../utils/copyToClipboard';
 import './index.less';
@@ -25,7 +25,7 @@ const CodeBlock: FC<CodeBlockProps> = props => {
       <SyntaxHighlighter language={props.language} style={dark}>
         {props.children}
       </SyntaxHighlighter>
-      <Button size="mini" onClick={onCopy}>
+      <Button size="mini" onClick={onCopy} disabled={copyText === 'Copied'}>
         {copyText}
       </Button>
     </div>

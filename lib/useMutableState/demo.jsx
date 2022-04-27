@@ -8,10 +8,13 @@ export default () => {
 
   return (
     <div className="demo-wrapper border">
-      <p>Count is: {state.count}</p>
-      <Button onClick={() => state.count++}>Add</Button>
-      <Button onClick={() => state.count--}>Reduce</Button>
-      <Button onClick={() => (state.count = 0)}>Reset</Button>
+      <p>
+        Count is:
+        {state.count}
+      </p>
+      <Button onClick={() => state.count++}>+</Button>
+      <Button onClick={() => state.count--}>-</Button>
+      <Button onClick={() => (state.count = 0)}>重置</Button>
     </div>
   );
 };

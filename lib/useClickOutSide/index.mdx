@@ -1,14 +1,14 @@
 # useClickOutSide
 
-clickoutside event
+点击特定元素的外部触发的 hooks
 
-## Live Demo
+## Demo
 
 import Demo from './demo';
 
 <Demo />
 
-## Code
+## 示例代码
 
 import CodeBlock from '@/components/CodeBlock';
 import demo from '!!raw-loader!./demo';
@@ -19,14 +19,21 @@ import demo from '!!raw-loader!./demo';
 
 ### ref
 
-- type: `React.Ref`
-- default: `--`
+- 类型: `React.Ref`
+- 默认: `--`
 
-ref target
+ref
 
 ### callback
 
-- type: `Function`
-- default: `--`
+- 类型: `Function`
+- 默认: `--`
 
-trigger after clicked outside
+点击外部后的回调函数
+
+### excludes
+
+- 类型: `Array<React.Ref>`
+- 默认: `--`
+
+要排除的 ref
