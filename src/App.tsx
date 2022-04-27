@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <header className="app-header">
         <Menu horizontal defaultSelectedKey={'/' + getFirstPathCode(location.pathname)} onClick={onMenuClick}>
-          <Menu.SubMenu key="/">Home</Menu.SubMenu>
-          <Menu.SubMenu key="/guide">Guide</Menu.SubMenu>
-          <Menu.SubMenu key="/api">Api</Menu.SubMenu>
+          <Menu.SubMenu key="/">首页</Menu.SubMenu>
+          <Menu.SubMenu key="/guide">指南</Menu.SubMenu>
+          <Menu.SubMenu key="/api">API</Menu.SubMenu>
           <Menu.SubMenu key="">
             <a href="https://github.com/WinmezzZ/react-hooks" target="_blank" rel="noopener noreferrer">
               Github
