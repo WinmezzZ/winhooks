@@ -1,4 +1,4 @@
-import { useMutableState } from '@winme/react-hooks';
+import { useMutableState } from 'winhooks';
 import { Button } from 'ultra-design';
 
 export default () => {

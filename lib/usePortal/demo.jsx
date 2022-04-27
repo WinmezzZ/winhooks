@@ -1,4 +1,4 @@
-import { usePortal, useClickOutSide } from '@winme/react-hooks';
+import { usePortal, useClickOutSide } from 'winhooks';
 import { useRef, useState } from 'react';
 import { Button } from 'ultra-design';
 

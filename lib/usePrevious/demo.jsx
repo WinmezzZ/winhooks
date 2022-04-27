@@ -1,4 +1,4 @@
-import { usePrevious } from '@winme/react-hooks';
+import { usePrevious } from 'winhooks';
 import { useState } from 'react';
 import { Button } from 'ultra-design';
 

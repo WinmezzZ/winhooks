@@ -17,7 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@winme/react-hooks": ["lib"],
+      "winhooks": ["lib"],
       "@lib/*": ["lib/*"],
       "@/*": ["src/*"]
     }

@@ -1,4 +1,4 @@
-import { useAsyncEffect } from '@winme/react-hooks';
+import { useAsyncEffect } from 'winhooks';
 import { useState } from 'react';
 
 const getData = () => {

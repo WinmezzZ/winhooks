@@ -1,4 +1,4 @@
-import { useClickOutSide } from '@winme/react-hooks';
+import { useClickOutSide } from 'winhooks';
 import { useRef } from 'react';
 import { Button } from 'ultra-design';
 

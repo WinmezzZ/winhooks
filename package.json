@@ -1,6 +1,6 @@
 {
-  "name": "@winme/react-hooks",
-  "version": "0.0.2",
+  "name": "winhooks",
+  "version": "0.0.1",
   "description": "Some useful react hooks collections.",
   "author": {
     "name": "winme",

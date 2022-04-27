@@ -1,4 +1,4 @@
-import { useCallbackState } from '@winme/react-hooks';
+import { useCallbackState } from 'winhooks';
 import { Button } from 'ultra-design';
 
 export default () => {

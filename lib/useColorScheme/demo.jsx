@@ -1,4 +1,4 @@
-import { useColorScheme } from '@winme/react-hooks';
+import { useColorScheme } from 'winhooks';
 import { Button, ConfigProvider } from 'ultra-design';
 
 export default () => {

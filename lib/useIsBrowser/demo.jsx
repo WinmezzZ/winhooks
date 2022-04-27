@@ -1,4 +1,4 @@
-import { useIsBrowser } from '@winme/react-hooks';
+import { useIsBrowser } from 'winhooks';
 
 export default () => {
   const isBrowser = useIsBrowser();

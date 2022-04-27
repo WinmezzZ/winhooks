@@ -28,7 +28,7 @@ module.exports = defineConfig({
     });
 
     config.resolve.alias = {
-      '@winme/react-hooks': path.resolve(__dirname, 'lib/index'),
+      winhooks: path.resolve(__dirname, 'lib/index'),
       '@lib': path.resolve(__dirname, 'lib'),
       '@': path.resolve(__dirname, 'src'),
     };
