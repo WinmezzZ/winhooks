@@ -5,6 +5,9 @@ module.exports = defineConfig({
   modifyVars: {
     '@primary-color': '#13c2c2',
   },
+  devServer: {
+    port: 3113,
+  },
   webpack: async config => {
     const remarkGfm = await import('remark-gfm');
     const slug = await import('rehype-slug');
