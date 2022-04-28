@@ -53,7 +53,7 @@ export default function usePortal(options?: usePortaloptions) {
     } else {
       return document.body;
     }
-  }, []);
+  }, [id]);
 
   const Portal = React.useMemo(() => {
     const Portal_: FC = ({ children }) => {
