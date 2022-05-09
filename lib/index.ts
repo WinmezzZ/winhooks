@@ -13,3 +13,7 @@ export { default as usePortal } from './usePortal';
 export { default as useIsBrowser } from './useIsBrowser';
 
 export { default as usePrevious } from './usePrevious';
+
+export { default as useDebounce } from './useDebounce';
+
+export { default as useLockBodyScroll } from './useLockBodyScroll';
