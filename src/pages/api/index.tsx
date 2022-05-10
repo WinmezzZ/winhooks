@@ -28,7 +28,7 @@ function Api() {
 
   return (
     <div className="api-page">
-      <Menu style={{ width: 200, borderRight: '1px solid #ccc' }} defaultSelectedKey={selectKey} onClick={handleClick}>
+      <Menu style={{ width: 200, borderRight: '1px solid #ccc' }} selectedKey={selectKey} onClick={handleClick}>
         {menus.map(m => (
           <Menu.SubMenu key={m}>{m}</Menu.SubMenu>
         ))}

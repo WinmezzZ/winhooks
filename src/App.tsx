@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <Menu horizontal defaultSelectedKey={'/' + getFirstPathCode(location.pathname)} onClick={onMenuClick}>
+        <Menu horizontal selectedKey={'/' + getFirstPathCode(location.pathname)} onClick={onMenuClick}>
           <Menu.SubMenu key="/">首页</Menu.SubMenu>
           <Menu.SubMenu key="/guide">指南</Menu.SubMenu>
           <Menu.SubMenu key="/api">API</Menu.SubMenu>
