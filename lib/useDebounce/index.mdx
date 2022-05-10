@@ -1,0 +1,36 @@
+# useDebounce
+
+防抖，一般用于输入时防止连续触发请求，减少服务器开销
+
+<CodeBlock>const debounceValue = useDebounce(value, delay);</CodeBlock>
+
+## Demo
+
+连续输入关键词，将在停止的 300 毫秒之后发起请求
+
+import Demo from './demo';
+
+<Demo />
+
+## 示例代码
+
+import CodeBlock from '@/components/CodeBlock';
+import demo from '!!raw-loader!./demo';
+
+<CodeBlock>{demo}</CodeBlock>
+
+## Props
+
+### value
+
+- 类型: `any`
+- 默认: `--`
+
+要防抖的值/状态
+
+### delay
+
+- 类型: `number`
+- 默认: `--`
+
+延时的时间，单位为毫秒

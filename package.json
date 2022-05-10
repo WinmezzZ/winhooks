@@ -58,6 +58,6 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.0.1",
     "remark-gfm": "^3.0.1",
-    "ultra-design": "^0.0.40-beta"
+    "ultra-design": "^0.1.5"
   }
 }
