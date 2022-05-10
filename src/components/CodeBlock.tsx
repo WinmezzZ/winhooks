@@ -1,6 +1,6 @@
-import { FC, useState } from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import dark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark';
+import React, { FC, useState } from 'react';
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import dark from 'react-syntax-highlighter/dist/esm/styles/prism/material-oceanic';
 import { Button } from 'ultra-design';
 import copyToClipboard from '../utils/copyToClipboard';
 import './index.less';
@@ -33,7 +33,7 @@ const CodeBlock: FC<CodeBlockProps> = props => {
 };
 
 CodeBlock.defaultProps = {
-  language: 'language-jsx',
+  language: 'jsx',
 };
 
 export default CodeBlock;
